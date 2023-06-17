@@ -1,0 +1,159 @@
+<!-- todo: Set up GitHub -->
+<!-- todo: Deploy to website -->
+<!-- todo: Add button to change between stations -->
+<!-- todo: Make announcer -->
+<!-- todo: ULTIMATE GOAL, LOAD DATA FROM TFL API -->
+<html>
+  <head>
+    <title>Train board</title>
+
+    <style>
+      /* https://www.fontsquirrel.com/tools/webfont-generator */
+      @font-face {
+        font-family: "dot_matrixregular";
+        src: url("./fonts/dot-matrix/dotmatri-webfont.woff2") format("woff2"),
+          url("./fonts/dot-matrix/dotmatri-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "dot_matrixbold";
+        src: url("./fonts/dot-matrix/DOTMBold.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        background-color: black;
+        color: yellow;
+        height: 100%;
+        display: flex;
+      }
+      .large {
+        font-size: 40px;
+        font-family: "dot_matrixbold";
+        margin: 5px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .board {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 40px;
+      }
+      ol {
+        list-style-type: none;
+        padding: 0;
+      }
+      .debug-yellow {
+        border: yellow 3px dotted;
+      }
+      .debug-red {
+        border: red 3px solid;
+      }
+      .debug-green {
+        border: green 3px solid;
+      }
+      .regular-text {
+        font-family: "dot_matrixregular";
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="board">
+      <div>
+        <div class="row">
+          <p class="large">09:19</p>
+          <p class="large">Platform 8</p>
+        </div>
+
+        <p class="large">Liverpool Lime Street</p>
+        <ol class="regular-text">
+          <li>Watford Junction (09:36)</li>
+          <li>Milton Kenyes Central (10:08)</li>
+          <li>Tamworth (11:01)</li>
+          <li>Lichfield Trent Valley (11:08)</li>
+          <li>Stafford (11:24)</li>
+          <li>Crewe (11:43)</li>
+          <li>Runcorn (12:02)</li>
+          <li>Liverpool Lime Street (12:18)</li>
+        </ol>
+      </div>
+      <div>
+        <div class="large">Avanti West Coast</div>
+        <div class="regular-text">
+          First Class Is Located In The Front 4 Coaches.
+        </div>
+      </div>
+    </div>
+
+    <div class="board">
+      <div>
+        <div class="row">
+          <p class="large">17:53</p>
+          <p class="large">Platform 5</p>
+        </div>
+
+        <p class="large">Birmingham New Street</p>
+        <ol class="regular-text">
+          <li>Leighton Buzzard (18:25)</li>
+          <li>Bletchley (18:32)</li>
+          <li>Milton Keynes Central (18:38)</li>
+          <li>Wolverton (18:42)</li>
+          <li>Northampton (19:10)</li>
+          <li>Long Buckby (19:22)</li>
+          <li>Rugby (19:34)</li>
+          <li>Coventry (19:45)</li>
+          <li>Canley (19:48)</li>
+          <li>Tile Hill (19:52)</li>
+          <li>Berkswell (19:56)</li>
+          <li>Hampton-In-Arden (20:00)</li>
+          <li>Birmingham International Airport (20:04)</li>
+          <li>Birmingham New Street (20:14)</li>
+        </ol>
+      </div>
+      <div>
+        <div class="large">West Midlands Trains</div>
+        <div class="regular-text">
+          First Class Is Located At The Front 3 Coaches.
+        </div>
+      </div>
+    </div>
+
+    <div class="board">
+      <div>
+        <div class="row">
+          <p class="large">17:24</p>
+          <p class="large">Platform 7</p>
+        </div>
+
+        <p class="large">Manchester Picadilly</p>
+        <ol class="regular-text">
+          <li>Milton Keynes Central (18:07)</li>
+          <li>Rugby (18:30)</li>
+          <li>Tamworth (18:53)</li>
+          <li>Lichfield Trent Valley (19:00)</li>
+          <li>Stoke-on-Trent (19:27)</li>
+          <li>Macclesfield (19:43)</li>
+          <li>Stockport (19:57)</li>
+          <li>Manchester Picadilly (20:05)</li>
+        </ol>
+      </div>
+      <div>
+        <div class="large">Avanti West Coast</div>
+        <div class="regular-text">
+          First Class Is Located At The Front 4 Coaches.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
